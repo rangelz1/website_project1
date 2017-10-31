@@ -1,7 +1,98 @@
+body{
+	font-family:'Open-sans', sans-serif;
+	font-size: 17px;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+	background: #DEFCC3;
+}
+
 img{
 	width:50%;
 }
 
 .container{
 	margin:auto;
+}
+
+/* COMMON CLASSES */
+.primary-text{
+	color:#56a79a;
+}
+
+.primary-background{
+	background-color: #fff;
+}
+
+/* HEADER */
+
+#main-header{
+	border-bottom: 1px solid #56a79a; 
+}
+
+/* NAVBAR */
+#navbar{
+	text-transform:uppercase;
+}
+
+#navbar ul{
+	text-align: left;
+	display: inline;
+	margin: 0;
+	padding: 15px 4px 17px 0;
+	list-style: none;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+/* style for the individual menu items */
+#navbar ul li{
+	font: 12px/18px;
+	font-weight: bold;
+	display: inline-block;
+	margin-right: -4px;
+	padding: 15px 20px;
+	background: #fff;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+
+#navbar ul li:hover{
+	background: #555;
+	color: #fff;
+}
+
+/* style for the children of the main menu items (the dropdown menu) */
+#navbar ul li ul{
+	padding: 0;
+	position: absolute;
+	top: 75px;
+	margin-left: -20px;
+	width: 150px;
+	box-shadow: none;
+	opacity: 0;
+	transition: opacity 0.2s;
+	display: none;
+}
+
+#navbar ul li ul li{
+	background: #555;
+	display: block;
+	color: #fff;
+	text-shadow: 0 -1px 0 #000;
+	cursor: pointer;
+}
+
+#navbar ul li ul li:hover{
+	background: #666;
+}
+
+#navbar ul li:hover ul{
+ /* this reveals the dropdown menu on hover */
+ display: block;
+ opacity: 1;
+}
+
+ul li{
+	
+	list-style: none;
 }
